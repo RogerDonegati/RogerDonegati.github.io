@@ -20,6 +20,26 @@
 	<link rel="stylesheet" href="css/main-green.css" type="text/css">
 	<script src="js/jquery-2.1.3.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+	<!-- <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+	<style type="text/css">
+		a.fancybox img {
+			border: none;
+			box-shadow: 0 1px 7px rgba(0, 0, 0, 0.6);
+			-o-transform: scale(1, 1);
+			-ms-transform: scale(1, 1);
+			-moz-transform: scale(1, 1);
+			-webkit-transform: scale(1, 1);
+			transform: scale(1, 1);
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+		}
+	</style> -->
 </head>
 
 <body class="material-template">
@@ -361,460 +381,569 @@
 							</div>
 							<div class="page-content">
 
-								<!-- Portfolio Content -->
-								<div class="portfolio-content">
+								<!-- Portfolio filter -->
+								<ul id="portfolio_filters" class="portfolio-filters">
+									<li class="active">
+										<a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+									</li>
+									<li>
+										<a class="filter btn btn-sm btn-link" data-group="python">Python Web Application</a>
+									</li>
+									<li>
+										<a class="filter btn btn-sm btn-link" data-group="php">PHP Web Application</a>
+									</li>
+									<li>
+										<a class="filter btn btn-sm btn-link" data-group="android">Mobile - Android App</a>
+									</li>
+								</ul>
+								<!-- End of Portfolio filter -->
 
-									<!-- Portfolio filter -->
-									<ul id="portfolio_filters" class="portfolio-filters">
-										<li class="active">
-											<a class="filter btn btn-sm btn-link active" data-group="all">All</a>
-										</li>
-										<li>
-											<a class="filter btn btn-sm btn-link" data-group="python">Python Web Application</a>
-										</li>
-										<li>
-											<a class="filter btn btn-sm btn-link" data-group="php">PHP Web Application</a>
-										</li>
-										<li>
-											<a class="filter btn btn-sm btn-link" data-group="android">Mobile - Android App</a>
-										</li>
-									</ul>
-									<!-- End of Portfolio filter -->
+								<!-- Portfolio Grid -->
+								<div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
 
-									<!-- Portfolio Grid -->
-									<div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+									<!-- PYTHON - Description (English) -->
+									<figure class="item" data-groups='["all", "python"]'>
+										<a href="pdfs/Resumo-Python-English.pdf" data-type="pdf" data-fancybox="gallery" data-caption="Description of the Python Web Application (English)">
+											<img src="images/portfolio/preview/python/description-english.png" alt="">
+											<div>
+												<h5 class="name">Description of the Python WebApplication (English)</h5>
+												<small>PDF</small>
+												<i class="fas fa-file-alt"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PYTHON - Portfolio Item 1 -->
-										<figure class="item" data-groups='["all", "python"]'>
-											<a href="https://www.youtube.com/embed/XVw6XdUny3c" class="lightbox mfp-iframe" title="Video Presentation">
-												<img src="images/portfolio/full/python/1-thumb.png" alt="">
-												<div>
-													<h5 class="name">Python (Flask)</h5>
-													<small>Video</small>
-													<i class="fas fa-video"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PYTHON - Description (Portuguese) -->
+									<figure class="item" data-groups='["all", "python"]'>
+										<a href="pdfs/Resumo-Python.pdf" data-type="pdf" data-fancybox="gallery" data-caption="Description of the Python Web Application (Portuguese)">
+											<img src="images/portfolio/preview/python/description.png" alt="">
+											<div>
+												<h5 class="name">Description of the Python Web Application (Portuguese)</h5>
+												<small>PDF</small>
+												<i class="fas fa-file-alt"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PYTHON - Portfolio Item 2 -->
-										<figure class="item" data-groups='["all", "python"]'>
-											<a href="images/portfolio/full/python/2-login.png" class="lightbox" title="Login">
-												<img src=" images/portfolio/full/python/2-login.png" alt="">
-												<div>
-													<h5 class="name">Python (Flask)</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
+									<!-- PYTHON - Portfolio Item 01 - Diagram -->
+									<figure class="item" data-groups='["all", "python"]'>
+										<a href="images/portfolio/full/python/01-architecture.jpg" data-fancybox="gallery" data-caption="Architectural Diagram">
+											<img src="images/portfolio/preview/python/01-architecture.jpg" alt="">
+											<div>
+												<h5 class="name">Python (Flask)</h5>
+												<small>Video</small>
+												<i class="fas fa-video"></i>
+											</div>
+										</a>
+									</figure>
 
-												</div>
-											</a>
-										</figure>
+									<!-- PYTHON - Portfolio Item 1 -->
+									<figure class="item" data-groups='["all", "python"]'>
+										<a href="https://www.youtube.com/embed/XVw6XdUny3c" data-fancybox="gallery" data-caption="Video Presentation">
+											<img src="images/portfolio/full/python/1-thumb.png" alt="">
+											<div>
+												<h5 class="name">Python (Flask)</h5>
+												<small>Video</small>
+												<i class="fas fa-video"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PYTHON - Portfolio Item 3 -->
-										<figure class="item" data-groups='["all","python"]'>
-											<a href="images/portfolio/full/python/3-home.png" class="lightbox" title="Home Page">
-												<img src="images/portfolio/full/python/3-home.png" alt="">
-												<div>
-													<h5 class="name">Python (Flask)</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PYTHON - Portfolio Item 2 -->
+									<figure class="item" data-groups='["all", "python"]'>
+										<a href="images/portfolio/full/python/2-login.png" data-fancybox="gallery" data-caption="Login">
+											<img src=" images/portfolio/full/python/2-login.png" alt="">
+											<div>
+												<h5 class="name">Python (Flask)</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
 
-										<!-- PYTHON - Portfolio Item 4 -->
-										<figure class="item" data-groups='["all","python"]'>
-											<a href="images/portfolio/full/python/4-automatic.gif" class="lightbox" title="Automatic Control">
-												<img src="images/portfolio/full/python/4-automatic.gif" alt="">
-												<div>
-													<h5 class="name">Python (Flask)</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PYTHON - Portfolio Item 5 -->
-										<figure class="item" data-groups='["all","python"]'>
-											<a href="images/portfolio/full/python/5-reports.png" class="lightbox" title="Reports">
-												<img src="images/portfolio/full/python/5-reports.png" alt="">
-												<div>
-													<h5 class="name">Python (Flask)</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PYTHON - Portfolio Item 3 -->
+									<figure class="item" data-groups='["all","python"]'>
+										<a href="images/portfolio/full/python/3-home.png" data-fancybox="gallery" data-caption="Home Page">
+											<img src="images/portfolio/full/python/3-home.png" alt="">
+											<div>
+												<h5 class="name">Python (Flask)</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PYTHON - Portfolio Item 6 -->
-										<figure class="item" data-groups='["all","python"]'>
-											<a href="images/portfolio/full/python/6-users-manager.png" class="lightbox" title="User Management">
-												<img src="images/portfolio/full/python/6-users-manager.png" alt="">
-												<div>
-													<h5 class="name">Python (Flask)</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PYTHON - Portfolio Item 4 -->
+									<figure class="item" data-groups='["all","python"]'>
+										<a href="images/portfolio/full/python/4-automatic.gif" data-fancybox="gallery" data-caption="Automatic Control">
+											<img src="images/portfolio/full/python/4-automatic.gif" alt="">
+											<div>
+												<h5 class="name">Python (Flask)</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PYTHON - Portfolio Item 7 -->
-										<figure class="item" data-groups='["all","python"]'>
-											<a href="images/portfolio/full/python/7-websies-manager.png" class="lightbox" title="Website Management">
-												<img src="images/portfolio/full/python/7-websies-manager.png" alt="">
-												<div>
-													<h5 class="name">Python (Flask)</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PYTHON - Portfolio Item 5 -->
+									<figure class="item" data-groups='["all","python"]'>
+										<a href="images/portfolio/full/python/5-reports.png" data-fancybox="gallery" data-caption="Reports">
+											<img src="images/portfolio/full/python/5-reports.png" alt="">
+											<div>
+												<h5 class="name">Python (Flask)</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
+									<!-- PYTHON - Portfolio Item 6 -->
+									<figure class="item" data-groups='["all","python"]'>
+										<a href="images/portfolio/full/python/6-users-manager.png" data-fancybox="gallery" data-caption="User Management">
+											<img src="images/portfolio/full/python/6-users-manager.png" alt="">
+											<div>
+												<h5 class="name">Python (Flask)</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PHP - Portfolio Item 1 -->
-										<figure class="item" data-groups='["all", "php"]'>
-											<a href="images/portfolio/full/php/1-login.png" class="lightbox" title="Login">
-												<img src="images/portfolio/full/php/1-login.png" alt="">
-												<div>
-													<h5 class="name">PHP</h5>
-													<small>Illustration</small>
-													<i class="fa fa-file-text-o"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PYTHON - Portfolio Item 7 -->
+									<figure class="item" data-groups='["all","python"]'>
+										<a href="images/portfolio/full/python/7-websies-manager.png" data-fancybox="gallery" data-caption="Website Management">
+											<img src="images/portfolio/full/python/7-websies-manager.png" alt="">
+											<div>
+												<h5 class="name">Python (Flask)</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PHP - Portfolio Item 2 -->
-										<figure class="item" data-groups='["all", "php"]'>
-											<a href="images/portfolio/full/php/2-home.png" class="lightbox" title="Home Page">
-												<img src="images/portfolio/full/php/2-home.png" alt="">
-												<div>
-													<h5 class="name">PHP</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Description (English) -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="pdfs/Resumo-PHP-English.pdf" data-type="pdf" data-fancybox="gallery" data-caption="Description of the PHP Web Application (English)">
+											<img src="images/portfolio/preview/php/description-english.png" alt="">
+											<div>
+												<h5 class="name">Description of the PHP Web Application (English)</h5>
+												<small>PDF</small>
+												<i class="fas fa-file-alt"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PHP - Portfolio Item 3 -->
-										<figure class="item" data-groups='["all", "php"]'>
-											<a href="images/portfolio/full/php/3-projects.png" class="lightbox" title="Register Projects">
-												<img src="images/portfolio/full/php/3-projects.png" alt="">
-												<div>
-													<h5 class="name">PHP</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Description (Portuguese) -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="pdfs/Resumo-PHP.pdf" data-type="pdf" data-fancybox="gallery" data-caption="Description of the PHP Web Application (Portuguese)">
+											<img src="images/portfolio/preview/php/description.png" alt="">
+											<div>
+												<h5 class="name">Description of the PHP Web Application (Portuguese)</h5>
+												<small>PDF</small>
+												<i class="fas fa-file-alt"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PHP - Portfolio Item 4 -->
-										<figure class="item" data-groups='["all", "php"]'>
-											<a href="images/portfolio/full/php/4-individual-request.png" class="lightbox" title="Individual Request">
-												<img src="images/portfolio/full/php/4-individual-request.png" alt="">
-												<div>
-													<h5 class="name">PHP</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Portfolio Item 01 - Diagram -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/01-architecture.jpg" data-fancybox="gallery" data-caption="Architectural Diagram">
+											<img src="images/portfolio/preview/php/01-architecture.jpg" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PHP - Portfolio Item 5 -->
-										<figure class="item" data-groups='["all", "php"]'>
-											<a href="images/portfolio/full/php/5-group-request.png" class="lightbox" title="Group Request">
-												<img src="images/portfolio/full/php/5-group-request.png" alt="">
-												<div>
-													<h5 class="name">PHP</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Portfolio Item 1 -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/1-login.png" data-fancybox="gallery" data-caption="Login">
+											<img src="images/portfolio/full/php/1-login.png" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PHP - Portfolio Item 6 -->
-										<figure class="item" data-groups='["all", "php"]'>
-											<a href="images/portfolio/full/php/6-individual-result.gif" class="lightbox" title="Individual Result">
-												<img src="images/portfolio/full/php/6-individual-result.gif" alt="">
-												<div>
-													<h5 class="name">PHP</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Portfolio Item 2 -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/2-home.png" data-fancybox="gallery" data-caption="Home Page">
+											<img src="images/portfolio/full/php/2-home.png" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PHP - Portfolio Item 7 -->
-										<figure class="item" data-groups='["all", "php"]'>
-											<a href="images/portfolio/full/php/7-group-result.png" class="lightbox" title="Group Result">
-												<img src="images/portfolio/full/php/7-group-result.png" alt="">
-												<div>
-													<h5 class="name">PHP</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Portfolio Item 3 -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/3-projects.png" data-fancybox="gallery" data-caption="Register Projects">
+											<img src="images/portfolio/full/php/3-projects.png" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PHP - Portfolio Item 8 -->
-										<figure class="item" data-groups='["all", "php"]'>
-											<a href="images/portfolio/full/php/8-billing.png" class="lightbox" title="Billing Page">
-												<img src="images/portfolio/full/php/8-billing.png" alt="">
-												<div>
-													<h5 class="name">PHP</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Portfolio Item 4 -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/4-individual-request.png" data-fancybox="gallery" data-caption="Individual Request">
+											<img src="images/portfolio/full/php/4-individual-request.png" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- PHP - Portfolio Item 9 -->
-										<figure class="item" data-groups='["all", "php"]'>
-											<a href="images/portfolio/full/php/9-reports.png" class="lightbox" title="Reports Generator">
-												<img src="images/portfolio/full/php/9-reports.png" alt="">
-												<div>
-													<h5 class="name">PHP</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Portfolio Item 5 -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/5-group-request.png" data-fancybox="gallery" data-caption="Group Request">
+											<img src="images/portfolio/full/php/5-group-request.png" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<br>
-										<hr>
-										<br>
+									<!-- PHP - Portfolio Item 6 -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/6-individual-result.gif" data-fancybox="gallery" data-caption="Individual Result">
+											<img src="images/portfolio/full/php/6-individual-result.gif" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 1 -->
-										<figure class="item" data-groups='["all", "android"]'>
-											<!-- class="lightbox mfp-iframe" -->
-											<a href="images/portfolio/full/android/1-register.jpeg" class="lightbox" title="Register">
-												<img src="images/portfolio/full/android/1-register.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Portfolio Item 7 -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/7-group-result.png" data-fancybox="gallery" data-caption="Group Result">
+											<img src="images/portfolio/full/php/7-group-result.png" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 2 -->
-										<figure class="item" data-groups='["all",  "android"]'>
-											<a href="images/portfolio/full/android/2-login.jpeg" class="lightbox" title="Login">
-												<img src="images/portfolio/full/android/2-login.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Portfolio Item 8 -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/8-billing.png" data-fancybox="gallery" data-caption="Billing Page">
+											<img src="images/portfolio/full/php/8-billing.png" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 3 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/3-home-movies.jpeg" class="lightbox" title="Home Page">
-												<img src="images/portfolio/full/android/3-home-movies.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- PHP - Portfolio Item 9 -->
+									<figure class="item" data-groups='["all", "php"]'>
+										<a href="images/portfolio/full/php/9-reports.png" data-fancybox="gallery" data-caption="Reports Generator">
+											<img src="images/portfolio/full/php/9-reports.png" alt="">
+											<div>
+												<h5 class="name">PHP</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 4 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/4-search.jpeg" class="lightbox" title="Search Page">
-												<img src="images/portfolio/full/android/4-search.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Description (English) -->
+									<figure class="item" data-groups='["all", "android"]'>
+										<a href="pdfs/Resumo-Android-English.pdf" data-fancybox="gallery" data-caption="Description of the Android Mobile Application (English)">
+											<img src="images/portfolio/preview/android/description-english.png" alt="">
+											<div>
+												<h5 class="name">Description of the Android Mobile Application (English)</h5>
+												<small>PDF</small>
+												<i class="fas fa-file-alt"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 5 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/5-movie_details.jpeg" class="lightbox" title="Movie Details">
-												<img src="images/portfolio/full/android/5-movie_details.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Description (Portuguese) -->
+									<figure class="item" data-groups='["all", "android"]'>
+										<a href="pdfs/Resumo-Android.pdf" data-fancybox="gallery" data-caption="Description of the Android Mobile Application (Portuguese)">
+											<img src="images/portfolio/preview/android/description.png" alt="">
+											<div>
+												<h5 class="name">Description of the Android Mobile Application (Portuguese)</h5>
+												<small>PDF</small>
+												<i class="fas fa-file-alt"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 6 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/6- movie-detail2.jpeg" class="lightbox" title="Movies Details (2)">
-												<img src="images/portfolio/full/android/6- movie-detail2.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 01 - Diagram -->
+									<figure class="item" data-groups='["all", "android"]'>
+										<a href="images/portfolio/full/android/01-architecture.png" data-fancybox="gallery" data-caption="Architectural Diagram">
+											<img src="images/portfolio/preview/android/01-architecture.png" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 7 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/7-tv-show-seasons.jpeg" class="lightbox" title="Season Information">
-												<img src="images/portfolio/full/android/7-tv-show-seasons.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 02 - Diagram -->
+									<figure class="item" data-groups='["all", "android"]'>
+										<a href="images/portfolio/full/android/02-Class-Diagram.png" data-fancybox="gallery" data-caption="Class Diagram">
+											<img src="images/portfolio/preview/android/02-Class-Diagram.png" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 8 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/8-tv-show-episodes.jpeg" class="lightbox" title="Episodes">
-												<img src="images/portfolio/full/android/8-tv-show-episodes.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 1 -->
+									<figure class="item" data-groups='["all", "android"]'>
+										<!-- class="fancybox mfp-iframe" -->
+										<a href="images/portfolio/full/android/1-register.jpeg" data-fancybox="gallery" data-caption="Register">
+											<img src="images/portfolio/full/android/1-register.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 9 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/9-navbar-social.jpeg" class="lightbox" title="Social Navbar">
-												<img src="images/portfolio/full/android/9-navbar-social.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 2 -->
+									<figure class="item" data-groups='["all",  "android"]'>
+										<a href="images/portfolio/full/android/2-login.jpeg" data-fancybox="gallery" data-caption="Login">
+											<img src="images/portfolio/full/android/2-login.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 10 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/10-search-users.jpeg" class="lightbox" title="Search Users">
-												<img src="images/portfolio/full/android/10-search-users.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 3 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/3-home-movies.jpeg" data-fancybox="gallery" data-caption="Home Page">
+											<img src="images/portfolio/full/android/3-home-movies.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 11 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/11-friends.jpeg" class="lightbox" title="Friends">
-												<img src="images/portfolio/full/android/11-friends.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 4 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/4-search.jpeg" data-fancybox="gallery" data-caption="Search Page">
+											<img src="images/portfolio/full/android/4-search.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 12 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/12-my_profile.jpeg" class="lightbox" title="My Profile">
-												<img src="images/portfolio/full/android/12-my_profile.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 5 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/5-movie_details.jpeg" data-fancybox="gallery" data-caption="Movie Details">
+											<img src="images/portfolio/full/android/5-movie_details.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 13 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/13-privacy.jpeg" class="lightbox" title="Privacy Options">
-												<img src="images/portfolio/full/android/13-privacy.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
-										<!-- Android - Portfolio Item 14 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/14-privacy2.jpeg" class="lightbox" title="Privacy Options (2)">
-												<img src="images/portfolio/full/android/14-privacy2.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 6 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/6- movie-detail2.jpeg" data-fancybox="gallery" data-caption="Movies Details (2)">
+											<img src="images/portfolio/full/android/6- movie-detail2.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 15 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/15-navbar-account.jpeg" class="lightbox" title="Account Navbar">
-												<img src="images/portfolio/full/android/15-navbar-account.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 7 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/7-tv-show-seasons.jpeg" data-fancybox="gallery" data-caption="Season Information">
+											<img src="images/portfolio/full/android/7-tv-show-seasons.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 16 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/16-favorites.jpeg" class="lightbox" title="Favorites">
-												<img src="images/portfolio/full/android/16-favorites.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 8 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/8-tv-show-episodes.jpeg" data-fancybox="gallery" data-caption="Episodes">
+											<img src="images/portfolio/full/android/8-tv-show-episodes.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 17 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/17-profile-data.jpeg" class="lightbox" title="Profile Data">
-												<img src="images/portfolio/full/android/17-profile-data.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
+									<!-- Android - Portfolio Item 9 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/9-navbar-social.jpeg" data-fancybox="gallery" data-caption="Social Navbar">
+											<img src="images/portfolio/full/android/9-navbar-social.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
-										<!-- Android - Portfolio Item 18 -->
-										<figure class="item" data-groups='["all","android"]'>
-											<a href="images/portfolio/full/android/18-popular-movies.jpeg" class="lightbox" title="Most Popular Movies">
-												<img src="images/portfolio/full/android/18-popular-movies.jpeg" alt="">
-												<div>
-													<h5 class="name">Android</h5>
-													<small>Illustration</small>
-													<i class="fas fa-image"></i>
-												</div>
-											</a>
-										</figure>
-										<br>
-										<hr>
-										<br>
-									</div>
-									<!-- /Portfolio Grid -->
+									<!-- Android - Portfolio Item 10 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/10-search-users.jpeg" data-fancybox="gallery" data-caption="Search Users">
+											<img src="images/portfolio/full/android/10-search-users.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 
+									<!-- Android - Portfolio Item 11 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/11-friends.jpeg" data-fancybox="gallery" data-caption="Friends">
+											<img src="images/portfolio/full/android/11-friends.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
+
+									<!-- Android - Portfolio Item 12 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/12-my_profile.jpeg" data-fancybox="gallery" data-caption="My Profile">
+											<img src="images/portfolio/full/android/12-my_profile.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
+
+									<!-- Android - Portfolio Item 13 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/13-privacy.jpeg" data-fancybox="gallery" data-caption="Privacy Options">
+											<img src="images/portfolio/full/android/13-privacy.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
+									<!-- Android - Portfolio Item 14 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/14-privacy2.jpeg" data-fancybox="gallery" data-caption="Privacy Options (2)">
+											<img src="images/portfolio/full/android/14-privacy2.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
+
+									<!-- Android - Portfolio Item 15 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/15-navbar-account.jpeg" data-fancybox="gallery" data-caption="Account Navbar">
+											<img src="images/portfolio/full/android/15-navbar-account.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
+
+									<!-- Android - Portfolio Item 16 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/16-favorites.jpeg" data-fancybox="gallery" data-caption="Favorites">
+											<img src="images/portfolio/full/android/16-favorites.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
+
+									<!-- Android - Portfolio Item 17 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/17-profile-data.jpeg" data-fancybox="gallery" data-caption="Profile Data">
+											<img src="images/portfolio/full/android/17-profile-data.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
+
+									<!-- Android - Portfolio Item 18 -->
+									<figure class="item" data-groups='["all","android"]'>
+										<a href="images/portfolio/full/android/18-popular-movies.jpeg" data-fancybox="gallery" data-caption="Most Popular Movies">
+											<img src="images/portfolio/full/android/18-popular-movies.jpeg" alt="">
+											<div>
+												<h5 class="name">Android</h5>
+												<small>Illustration</small>
+												<i class="fas fa-image"></i>
+											</div>
+										</a>
+									</figure>
 								</div>
-								<!-- /Portfolio Content -->
-							</div>
-						</div>
-					</section>
-					<!-- /Portfolio Subpage -->
+								<!-- /Portfolio Grid -->
 
+							</div>
+							<!-- /Portfolio Content -->
+						</div>
 				</div>
+				</section>
+				<!-- /Portfolio Subpage -->
+
 			</div>
-			<!-- /Page changer wrapper -->
 		</div>
-		<!-- /Main Content -->
+		<!-- /Page changer wrapper -->
+	</div>
+	<!-- /Main Content -->
 	</div>
 	<footer>
 		<!-- The default layout of this page was created and available by Geek University at Udemy (github course) -->
@@ -840,10 +969,25 @@
 	<script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
 	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
 	<script type="text/javascript" src="js/jquery.googlemap.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+	<!--
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+	<script type="text/javascript">
+		$(function ($) {
+			var titlePosition = 'outside';
+			$('a.fancybox').attr('rel', 'fancyboxgallery');
+			$('a.fancybox').fancybox({
+				titlePosition: titlePosition
+			});
+		});
+		$.noConflict();
+	</script> -->
 </body>
 
 </html>
